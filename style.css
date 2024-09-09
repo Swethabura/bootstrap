@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+.nav-item{
+    text-align: center;
+    font-size: larger;
+    padding: 5%;
+}
+.nav-item a{
+    color: white;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    .img{
+        flex-basis: 38%;
+    }
+    .contents{
+        flex-basis: 62%;
+    }
+}
+.img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+.contents{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-h1{
+    font-size: 500%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fst-italic{
+    padding-bottom: 6%;
+}
+#home button{
+    width: 35%;
+    padding: 2%;
+    border: none;
+}
+ion-icon{
+    padding-right: 5%;
+    font-size: large;
+}
+#home button:hover{
+    background-color: silver;
+}
+#portfolio{
+    width: 100%;
+    height: 285%;
+    /* border: 1px solid; */
+}
+.portfolio-images{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 10px;
+
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img2"
+    "img3 img2"
+    "img3 img4"
+    "img3 img4"
+    "img3 img4"
+    "img3 img5"
+    "img3 img5"
+    "img6 img5"
+    "img6 img5"
+    "img6 img5"
+    "img6 img5"
+    "img6 img7"
+    "img6 img7"
+    "img6 img7"
+    "img6 img7"
+    "img6 img7"
+    "img6 img7"
+    "img6 img7"
+    "img8 img7";  
+}
+.portfolio-images img{
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    grid-area: img1;
+    padding-top: 2%;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+#portfolio h1, #about h1, #about h2, #contact h1{
+    padding: 2% 0 0 5%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+    opacity: 0.1;
+}
+#about{
+    width: 100%;
+    height: 270%;
+}
+#about p{
+    padding: 2% 5% 0 5%;
+    text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#about .photography, #about .webdesign, #about .photoshop{
+    /* border: 1px solid; */
+    width: 85%;
+    height: 2%;
+    margin-left: 5%;
+    background-color: rgb(230, 225, 225);
+}
+#about div .per1{
+    margin-left: 0;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(75, 72, 72);
+    color: azure;
+    text-align: center;
+}
+/* #about .skill-p{
+    font-family: monospace;
+    letter-spacing: 2px;
+} */
+#about div .per2{
+    margin-left: 0;
+    width: 85%;
+    height: 100%;
+    background-color: rgb(75, 72, 72);
+    color: azure;
+    text-align: center;
+}
+#about div .per3{
+    margin-left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(75, 72, 72);
+    color: azure;
+    text-align: center;
+}
+#about .numbers{
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 85%;
+    height: 12.5%;
+    background-color: rgb(75, 72, 72);
+    display: flex;
+    margin-bottom: 2%;
+    .projects,.projects-done,.clients,.meetings{
+        flex-basis: 50%;
+        align-self: center;
+        padding-left: 5%;
+        color: aliceblue;
+    }
+}
+.n1{
+    font-size: larger;
+    margin-left: 8.5%;
+}
+.n2{
+    font-size: larger;
+    margin-left: 25%;
+}
+.n3{
+    font-size: larger;
+    margin-left: 25%;
+}
+.n4{
+    font-size: larger;
+    margin-left: 11%;
+}
+/* .p1{
+    font-family:'Courier New', Courier, monospace  !important; 
+} */
+.cards{
+    width: 100%;
+    height: 39%;
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-evenly;
+
+    .card1,.card2{
+        flex-basis: 45%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+} 
+.card1 p, .card2 p{
+    text-align: center!important;
+    padding: 2%!important;
+    font-size: large;
+    margin-top: 5%;
+    opacity: 0.6;
+}
+#money{
+    font-size: 250%;
+    margin: 0;
+}
+#per-month{
+    padding: 0!important;
+    margin: 0!important;
+}
+.card1 hr, .card2 hr{
+    width: 100%;
+    margin: 0;
+}
+.p-3.mb-2.bg-dark-subtle{
+    margin-top: 3%;
+    height: 15%;
+}
+.signup{
+    border: none;
+    margin-left: 42.5%;
+    margin-top: 5%;
+    padding: 2.5%;
+}
+.signup:hover{
+    background-color: rgb(184, 174, 174);
+}
+h3{
+    text-align: center;
+    padding-top: 8%;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+.card1:hover,.card2:hover{
+    box-shadow: 0 20px 20px 0 black;
+}
+#contact{
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid; */
+}
+#contact div{
+    text-align: center;
+    width: 50%;
+    margin:5% 0 0 25%;
+}
+#contact div ion-icon
+{
+    font-size: 200%;
+    opacity: 0.7;
+}
+.footer{
+    width: 100%;
+    height: 20%;
+    background-color: silver;
+    text-align: center;
+    padding-top: 7%;
+}
+
+
+
+
+
+
+
+
+
